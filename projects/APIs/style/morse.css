@@ -1,0 +1,86 @@
+textarea {
+  flex-grow: 2;
+  font-size: 1.2em;
+  resize: none;
+  box-shadow: #252525 0 0 10px 10px;
+  border: 3px inset #eee;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+button {
+  align-self: flex-end;
+  padding: 5px 20px;
+  margin: 2px;
+  border: 4px outset #eee;
+  background-color: #ffffff;
+  margin: 5px;
+  position: inherit;
+  z-index: 2;
+  font-family: 'OCR A', monospace;
+  font-size: 1.1em;
+}
+
+button:hover {
+  border: 4px outset #eeeeee;
+  background-color: #eeeeee;
+}
+
+button:active {
+  border: 4px inset #eeeeee;
+}
+
+#play {
+  align-self: auto;
+  visibility: hidden;
+}
+
+audio {
+  visibility: hidden;
+}
+
+.background {
+  z-index: -1;
+  position: absolute;
+  background-color: #252525;
+  color: #444;
+  font-family: 'Lucida Console', monospace;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  user-select: none;
+}
+
+.bgText, .textMeasure {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  overflow: hidden;
+  font-size: 1.2em;
+  line-height: 1em;
+  display: flex;
+  flex-flow: column;
+  white-space: nowrap;
+}
+
+.bgText::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  letter-spacing: 5px;
+  background: linear-gradient(90deg, #252525ff 0%, #25252500 50%, #252525ff 100%);
+}
+
+.textMeasure {
+  position: absolute;
+  left: unset;
+  right: unset;
+  font-family: 'Lucida Console', monospace;
+  font-size: 1.2em;
+  visibility: hidden;
+}

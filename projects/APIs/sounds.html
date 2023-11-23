@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>its called MUSIC</title>
+  <link href="style/global.css" rel="stylesheet">
+  <link href="style/sounds.css" rel="stylesheet">
+  <script src="script/sounds/sounds.js"></script>
+  <script src="script/sounds/soundStyle.js"></script>
+</head>
+<body onload="initialize()" onkeydown="keyDown(event)">
+  <section>
+    <span class="background"></span>
+    <nav class="navigation">
+      <a href="index.html" class="navLink">Morse Code Translator</a>
+      <a href="sounds.html" class="navLink">Funny Sounds</a>
+    </nav>
+    <div class="container">
+      <span class="label">Music :)</span>
+      <div class="piano-container">
+        <div class="key-normal-container">
+          <span class="key-normal" id="keyA" value="-10" onpointerdown="buttonDown(event)">A<span class="sound-key">C</span></span>
+          <span class="key-normal" id="keyS" value="-8" onpointerdown="buttonDown(event)">S<span class="sound-key">D</span></span>
+          <span class="key-normal" id="keyD" value="-6" onpointerdown="buttonDown(event)">D<span class="sound-key">E</span></span>
+          <span class="key-normal" id="keyF" value="-4" onpointerdown="buttonDown(event)">F<span class="sound-key">F</span></span>
+          <span class="key-normal" id="keyG" value="-2" onpointerdown="buttonDown(event)">G<span class="sound-key">G</span></span>
+          <span class="key-normal" id="keyH" value="0" onpointerdown="buttonDown(event)">H<span class="sound-key">A</span></span>
+          <span class="key-normal" id="keyJ" value="2" onpointerdown="buttonDown(event)">J<span class="sound-key">B</span></span>
+          <span class="key-normal" id="keyK" value="4" onpointerdown="buttonDown(event)">K<span class="sound-key">C</span></span>
+          <span class="key-normal" id="keyL" value="6" onpointerdown="buttonDown(event)">L<span class="sound-key">D</span></span>
+          <span class="key-normal" id="keySemi" value="8" onpointerdown="buttonDown(event)">;<span class="sound-key">E</span></span>
+        </div>
+        <div class="key-odd-container">
+          <span class="key-odd" id="keyW" value="-9" onpointerdown="buttonDown(event)">W<span class="sound-key">C#<br>Db</span></span>
+          <span class="key-odd" id="keyE" value="-7" onpointerdown="buttonDown(event)">E<span class="sound-key">D#<br>Eb</span></span>
+          <span class="key-odd key-filler"></span>
+          <span class="key-odd" id="keyT" value="-3" onpointerdown="buttonDown(event)">T<span class="sound-key">F#<br>Gb</span></span>
+          <span class="key-odd" id="keyY" value="-1" onpointerdown="buttonDown(event)">Y<span class="sound-key">G#<br>Ab</span></span>
+          <span class="key-odd" id="keyU" value="1" onpointerdown="buttonDown(event)">U<span class="sound-key">A#<br>Bb</span></span>
+          <span class="key-odd key-filler"></span>
+          <span class="key-odd" id="keyO" value="5" onpointerdown="buttonDown(event)">O<span class="sound-key">C#<br>Db</span></span>
+          <span class="key-odd" id="keyP" value="7" onpointerdown="buttonDown(event)">P<span class="sound-key">D#<br>Eb</span></span>
+          <span class="key-odd-effect"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

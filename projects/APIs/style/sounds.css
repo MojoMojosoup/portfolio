@@ -1,0 +1,123 @@
+:root {
+  --normalHeight: 120px;
+  --oddHeight: 80px;
+  --keyWidth: 60px;
+}
+
+@keyframes bgScroll {
+  100% {
+    background-position-y: +809px;
+  }
+}
+@keyframes bgScroll2 {
+  100% {
+    background-position-x: +1850px;
+  }
+}
+.background {
+  background-image: url('../content/soundsbg.png');
+  background-repeat: repeat;
+  background-size: auto;
+  z-index: -1;
+  position: absolute;
+  background-color: #252525;
+  width: 150%;
+  height: 150%;
+  pointer-events: none;
+  user-select: none;
+  transform: rotate(-5deg);
+  animation: bgScroll 30s infinite linear, bgScroll2 50s infinite linear;
+}
+
+.container {
+  height: unset;
+  width: unset;
+}
+
+.label {
+  align-self: center;
+}
+
+.piano-container {
+  position: relative;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.key-normal-container, .key-odd-container {
+  display: flex;
+  flex-flow: row nowrap;
+  position: relative;
+  gap: 2px;
+  pointer-events: none;
+}
+
+.key-normal-container {
+  left: 0;
+}
+
+.key-odd-container {
+  left: 50px;
+  top: calc(var(--normalHeight) * -1);
+  z-index: 2;
+}
+
+.key-normal, .key-odd {
+  pointer-events: all;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: flex-end;
+  padding: 5px;
+  border: 3px outset;
+  user-select: none;
+  position: relative;
+}
+
+.key-normal {
+  border-color: #f0f0f0;
+  height: var(--normalHeight);
+  width: var(--keyWidth);
+}
+
+.key-odd {
+  border-color: #000000;
+  height: var(--oddHeight);
+  width: var(--keyWidth);
+  background-color: #101010;
+  color: #FFFFFF;
+}
+
+.key-normal:active, .key-odd:active {
+  border-style: inset;
+}
+
+.key-filler {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.sound-key {
+  position: absolute;
+  right: 5px;
+  font-size: 0.8em;
+  color: #808080;
+  pointer-events: none;
+}
+
+.key-normal-effect, .key-odd-effect {
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: var(--keyWidth);
+  pointer-events: none;
+  opacity: 0;
+  border: 1px solid #ffffff;
+  z-index: 1;
+}
+
+.key-normal-effect {
+  height: var(--normalHeight);
+}
+
+.key-odd-effect {
+  height: var(--oddHeight);
+}

@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>She be morse on my code till i</title>
+  <script src="script/morse/translate.js"></script>
+  <script src="script/morse/data.js"></script>
+  <script src="script/morse/styles.js"></script>
+  <link href="style/morse.css" rel="stylesheet">
+  <link href="style/global.css" rel="stylesheet">
+</head>
+<body onload="loadStyle()" onresize="initText()">
+  <section>
+    <span class="background">
+      <div class="textMeasure">A</div>
+      <div class="bgText"></div>
+    </span>
+    <nav class="navigation">
+      <a href="index.html" class="navLink">Morse Code Translator</a>
+      <a href="sounds.html" class="navLink">Funny Sounds</a>
+    </nav>
+    <div class="container">
+      <span class="label">Input text</span>
+      <textarea id="textInput" spellcheck="false"></textarea>
+      <button onclick="translateText(event)" onmouseenter="buttonEffect(event, 'Translate')">Translate</button>
+    </div>
+    <div class="container">
+      <span class="label">Input morse code</span>
+      <textarea id="morseInput" spellcheck="false"></textarea>
+      <button onclick="translateMorse(event)" onmouseenter="buttonEffect(event, 'Translate to text')">Translate to text</button>
+    </div>
+    <button id="play" role="switch" onclick="playPause()" data-playing="true">Pause</button>  
+  </section>
+</body>
+</html>
