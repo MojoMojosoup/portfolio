@@ -61,4 +61,10 @@ function load() {
     modalEl.classList.add('modal-hidden');
     modalImg.style.transform = 'scale(0)';
   })
+
+  const animElements = document.querySelectorAll('.bkg-anim');
+  for (let i = 0; i < animElements.length; i++) {
+    animElements[i].style.animationDuration = 5 + (Math.random() * 10) + 's';
+    animElements[i].style.opacity = Math.random();
+  }
 }

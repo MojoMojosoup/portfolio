@@ -14,6 +14,22 @@
 
 <body onload="load()">
   <section class="topPage">
+    <div class="bkg-container">
+      <svg class="anim1">
+        <path class="bkg-anim bkg-light" d="m0 200 100 75 0 425-100-75z"></path>
+        <path class="bkg-anim bkg-light" d="m100 400 100-75 0 500-100 75z"></path>
+        <path class="bkg-anim bkg-light" d="m200 150 100 75 0 425-100-75z"></path>
+        <path class="bkg-anim bkg-light" d="m300 100 100-75 0 500-100 75z"></path>
+        <path class="bkg-anim bkg-light" d="m400 0 100-75 0 500-100 75z"></path>
+      </svg>
+      <svg class="anim2">
+        <path class="bkg-anim bkg-light" d="m0 300 100 75 0 425-100-75z"></path>
+        <path class="bkg-anim bkg-light" d="m100 300 100-75 0 500-100 75z"></path>
+        <path class="bkg-anim bkg-light" d="m200 200 100 75 0 425-100-75z"></path>
+        <path class="bkg-anim bkg-light" d="m300 500 100-75 0 500-100 75z"></path>
+        <path class="bkg-anim bkg-light" d="m400 0 100-75 0 500-100 75z"></path>
+      </svg>
+    </div>
     <div class="top-corner-info">
       <h2>Contact</h2>
       <a class="redText" href="#">pjotr.claassen@gmail.com</a>
@@ -35,12 +51,12 @@
   </section>
   <section class="lowerPage">
     <div class="lowerVisuals">
-        <svg viewbox="0 0 500 150">
-          <polygon class="whitePath" points="0,110 0,150 500,150 500,110 250,10"></polygon>
-          <path class="purplePath"
-            d="M0 100 0 115 250 15 500 115 500 100 250 0ZM0 120 0 130 250 30 500 130 500 120 250 20ZM0 135 0 140 250 40 500 140 500 135 250 35Z">
-          </path>
-        </svg>
+      <svg viewbox="0 0 500 150">
+        <polygon class="whitePath" points="0,110 0,150 500,150 500,110 250,10"></polygon>
+        <path class="purplePath"
+          d="M0 100 0 115 250 15 500 115 500 100 250 0ZM0 120 0 130 250 30 500 130 500 120 250 20ZM0 135 0 140 250 40 500 140 500 135 250 35Z">
+        </path>
+      </svg>
       <div class="work-header-cont">
         <h1 class="work-header">My work</h1>
       </div>
@@ -50,13 +66,15 @@
         <div class="work-item-container">
           <div class="work-item-header">
             <span class="item-header-bg"></span>
-            <h2 class="item-header-title">Browser API Assignment</h2>
+            <h2 class="item-header-title">Browser API - School Assignment</h2>
           </div>
           <div class="work-item-content">
             <div class="work-item-info">
               <p class="normalText work-item-text">
-                This site was made for an assignment for my Web Development study to make use of some Browser API's, specifically Web Audio and Speech were used here.
-                It's a simple Morse Code translator and a little digital keyboard that I added since I had leftover time. I spent a good chunk of time
+                This site was made for an assignment for my Web Development study to make use of some Browser API's,
+                specifically Web Audio and Speech were used here.
+                It's a simple Morse Code translator and a little digital keyboard that I added since I had leftover
+                time. I spent a good chunk of time
                 working on the visuals which I'm quite happy with.
               </p>
               <a href="./projects/APIs/index.html" class="work-item-link">Visit</a>
@@ -85,19 +103,24 @@
         <div class="work-item-container">
           <div class="work-item-header">
             <span class="item-header-bg"></span>
-            <h2 class="item-header-title">Thingy 1!!</h2>
+            <h2 class="item-header-title">Webdesq Office - Internship</h2>
           </div>
           <div class="work-item-content">
             <div class="work-item-info">
-              <p class="normalText work-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <a href="." class="work-item-link">Visit</a>
+              <p class="normalText work-item-text">
+                I had an internship at Webdesq for half a year during my study where most of my time was spent working
+                on this site. It wasn't finished during my internship but we were able to make lots of progress. I
+                learned to use Svelte during this project and we used some libraries like YMap so multiple users can
+                work on the same document at once.
+              </p>
+              <a href="https://office.webdesq.net/" class="work-item-link">Visit</a>
             </div>
             <div class="work-item-pics">
-              <img src="img1.png" alt="cool pics" class="item-pic">
+              <div class="pic-container">
+                <img src="imgs/office-1.png" alt="" class="pic-group1 item-pic pic-visible" value="1">
+                <img src="imgs/office-2.png" alt="" class="pic-group1 item-pic pic-hidden" value="2">
+                <img src="imgs/office-3.png" alt="" class="pic-group1 item-pic pic-hidden" value="3">
+              </div>
               <span class="pic-btn pics-prev">
                 <svg viewbox="0 0 10 16">
                   <path d="M3 1 9 7Q10 8 9 9L3 15A1 1 0 011 13L6 8 1 3A1 1 0 013 1Z"></path>
