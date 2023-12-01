@@ -16,25 +16,25 @@
   <section class="topPage">
     <div class="bkg-container">
       <svg class="anim1">
-        <path class="bkg-anim bkg-light" d="m0 200 100 75 0 425-100-75z"></path>
-        <path class="bkg-anim bkg-light" d="m100 400 100-75 0 500-100 75z"></path>
-        <path class="bkg-anim bkg-light" d="m200 150 100 75 0 425-100-75z"></path>
-        <path class="bkg-anim bkg-light" d="m300 100 100-75 0 500-100 75z"></path>
-        <path class="bkg-anim bkg-light" d="m400 0 100-75 0 500-100 75z"></path>
+        <path class="bkg-anim bkg-light" d="m0 -30 100 75 0 425-100-75z"></path>
+        <path class="bkg-anim bkg-light" d="m100 0 100-75 0 500-100 75z"></path>
+        <path class="bkg-anim bkg-light" d="m200 45 100 75 0 425-100-75z"></path>
+        <path class="bkg-anim bkg-light" d="m300 -75 100-75 0 500-100 75z"></path>
+        <path class="bkg-anim bkg-light" d="m400 15 100 75 0 425-100-75z"></path>
       </svg>
       <svg class="anim2">
-        <path class="bkg-anim bkg-light" d="m0 300 100 75 0 425-100-75z"></path>
-        <path class="bkg-anim bkg-light" d="m100 300 100-75 0 500-100 75z"></path>
-        <path class="bkg-anim bkg-light" d="m200 200 100 75 0 425-100-75z"></path>
-        <path class="bkg-anim bkg-light" d="m300 500 100-75 0 500-100 75z"></path>
-        <path class="bkg-anim bkg-light" d="m400 0 100-75 0 500-100 75z"></path>
+        <path class="bkg-anim bkg-light" d="m0 50 100 75 0 425-100-75z"></path>
+        <path class="bkg-anim bkg-light" d="m100 -20 100-75 0 500-100 75z"></path>
+        <path class="bkg-anim bkg-light" d="m200 0 100 75 0 425-100-75z"></path>
+        <path class="bkg-anim bkg-light" d="m300 100 100-75 0 500-100 75z"></path>
+        <path class="bkg-anim bkg-light" d="m400 15 100 75 0 425-100-75z"></path>
       </svg>
     </div>
     <div class="top-corner-info">
       <h2>Contact</h2>
-      <a class="redText" href="#">pjotr.claassen@gmail.com</a>
+      <a class="redText" href="mailto:pjotr.claassen@gmail.com">pjotr.claassen@gmail.com</a>
       <h2>Links</h2>
-      <a class="redText" href="#">LinkedIn</a>
+      <a class="redText" href="https://www.linkedin.com/in/pjotr-claassen-488278290/">LinkedIn</a>
     </div>
     <div class="top-header">
       <p class="normalText">
@@ -77,7 +77,10 @@
                 time. I spent a good chunk of time
                 working on the visuals which I'm quite happy with.
               </p>
-              <a href="./projects/APIs/index.html" class="work-item-link">Visit</a>
+              <div class="work-item-link-container">
+                <a href="./projects/APIs/index.html" class="work-item-link">Visit</a>
+                <a href="https://github.com/MojoMojosoup/web-audio-site" class="work-item-link">Source code</a>
+              </div>
             </div>
             <div class="work-item-pics">
               <div class="pic-container">
@@ -109,9 +112,11 @@
             <div class="work-item-info">
               <p class="normalText work-item-text">
                 I had an internship at Webdesq for half a year during my study where most of my time was spent working
-                on this site. It wasn't finished during my internship but we were able to make lots of progress. I
-                learned to use Svelte during this project and we used some libraries like YMap so multiple users can
-                work on the same document at once.
+                on this site. When I started the basics were already there, but most functionality was either missing or
+                broken. Scrolling, styling, borders, and many other features were all part of what I worked on. I wasn't
+                the only person working on it and its still being worked on as we weren't able to finish it during my
+                internship. I learned to use Svelte during this project and we used some libraries like YMap so multiple
+                users can work on the same document at once.
               </p>
               <a href="https://office.webdesq.net/" class="work-item-link">Visit</a>
             </div>
@@ -139,7 +144,7 @@
         <div class="work-item-container">
           <div class="work-item-header">
             <span class="item-header-bg"></span>
-            <h2 class="item-header-title">Thingy 1!!</h2>
+            <h2 class="item-header-title">Video Game Music Showcase - Assignment</h2>
           </div>
           <div class="work-item-content">
             <div class="work-item-info">
@@ -147,11 +152,19 @@
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
                 reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <a href="." class="work-item-link">Visit</a>
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <div class="work-item-link-container">
+                <a href="./projects/Music/index.html" class="work-item-link">Visit</a>
+                <a href="https://github.com/MojoMojosoup/web-audio-site" class="work-item-link">Source code</a>
+              </div>
             </div>
             <div class="work-item-pics">
-              <img src="img1.png" alt="cool pics" class="item-pic">
+              <div class="pic-container">
+                <img src="imgs/morse-1.png" alt="" class="pic-group1 item-pic pic-visible" value="1">
+                <img src="imgs/morse-2.png" alt="" class="pic-group1 item-pic pic-hidden" value="2">
+                <img src="imgs/morse-3.png" alt="" class="pic-group1 item-pic pic-hidden" value="3">
+              </div>
               <span class="pic-btn pics-prev">
                 <svg viewbox="0 0 10 16">
                   <path d="M3 1 9 7Q10 8 9 9L3 15A1 1 0 011 13L6 8 1 3A1 1 0 013 1Z"></path>

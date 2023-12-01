@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: black;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+}
+
+header a {
+    padding: 13px 20px;
+    height: 100%;
+    text-align: center;
+    text-decoration-color: yellowgreen;
+    transition: all ease 0.3s;
+}
+
+header a:hover {
+    background-color: rgb(60, 60, 60);
+}

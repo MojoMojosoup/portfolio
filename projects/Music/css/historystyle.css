@@ -1,0 +1,127 @@
+body {
+  background-color: rgb(30, 30, 30);
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+.segment {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.divider {
+  width: 70%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    rgb(0, 0, 0, 0) 0%,
+    rgb(173, 255, 47) 50%,
+    rgb(0, 0, 0, 0) 100%
+  );
+  margin: 10px 0;
+}
+
+.intro {
+  width: 100%;
+  height: calc(100vh - 50px);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/arcade.jfif");
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-color: rgb(60, 60, 60);
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  width: 90%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.segment > div {
+  padding: 15px;
+  background-color: rgba(50, 50, 50, 0.9);
+  border-radius: 5px;
+}
+
+.intro > div {
+  width: 50%;
+  margin: auto 0;
+  padding: auto 0;
+}
+
+iframe {
+  width: 500px;
+  height: 300px;
+  margin-top: 15px;
+}
+
+.introFade {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+  background: rgb(40, 40, 40);
+  background: linear-gradient(
+    180deg,
+    rgba(30, 30, 30, 0) 15%,
+    rgba(30, 30, 30, 1) 100%
+  );
+}
+
+.arrowBG {
+  background-color: rgb(60, 60, 60);
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color ease 0.2s;
+}
+
+.arrowBG:hover {
+  background-color: white;
+  color: black;
+}
+
+.arrow {
+  border: solid yellowgreen;
+  border-width: 0 8px 8px 0;
+  display: inline-block;
+  margin-top: -20px;
+  width: 50px;
+  height: 50px;
+  transform: rotate(45deg);
+}
+
+iframe {
+  width: 900px;
+  height: 580px;
+  margin: 20px;
+}
+
+.content > div {
+  width: 80%;
+}
+
+.filler {
+  height: 250px;
+}
+h1 {
+  font-size: 1.6em;
+  margin: 10px;
+}

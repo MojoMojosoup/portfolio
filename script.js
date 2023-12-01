@@ -64,7 +64,8 @@ function load() {
 
   const animElements = document.querySelectorAll('.bkg-anim');
   for (let i = 0; i < animElements.length; i++) {
-    animElements[i].style.animationDuration = 5 + (Math.random() * 10) + 's';
-    animElements[i].style.opacity = Math.random();
+    const animDelay = Math.floor(Math.random() * 1000);
+    animElements[i].style.animationDuration = Math.floor(7000 + (Math.random() * 10000)) + 'ms';
+    animElements[i].style.opacity = Math.round(1 + (Math.random() * 9)) / 10;
   }
 }

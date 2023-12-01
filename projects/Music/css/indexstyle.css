@@ -1,0 +1,161 @@
+.intro {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 50px);
+  background-image: url("../img/indexBG.gif");
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-color: rgb(44, 44, 44);
+}
+
+.introHead {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: calc(100vh - 50px - 200px - 300px);
+}
+
+h1 {
+  font-size: 5em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+.introFade {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+  background: rgb(40, 40, 40);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 15%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.arrowBG {
+  background-color: rgb(60, 60, 60);
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color ease 0.2s;
+}
+
+.arrowBG:hover {
+  background-color: white;
+  color: black;
+}
+
+.arrow {
+  border: solid yellowgreen;
+  border-width: 0 8px 8px 0;
+  display: inline-block;
+  margin-top: -20px;
+  width: 50px;
+  height: 50px;
+  transform: rotate(45deg);
+}
+
+.content {
+  width: 100%;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  background: black;
+}
+
+.segment {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 25px;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.contentText {
+  background: linear-gradient(
+    150deg,
+    rgb(55, 55, 55) 25%,
+    rgb(15, 15, 15) 100%
+  );
+  padding: 30px;
+  border-radius: 25px;
+  max-width: 60%;
+}
+
+.contentText,
+.segment > img {
+  margin: 30px;
+}
+
+.segment > img {
+  margin: 10px;
+}
+
+.linkSegment {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    rgb(55, 55, 55) 25%,
+    rgb(15, 15, 15) 100%
+  );
+  margin: 25px;
+  padding: 25px;
+  border-radius: 25px;
+}
+
+.linkSegment > img {
+  width: 200px;
+  margin: 15px;
+}
+
+.linkSegment > a {
+  padding: 8px 40px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  background-color: #9acd32;
+  transition: all ease 0.3s;
+}
+
+.linkSegment > a:hover {
+  background-color: rgb(194, 245, 90);
+}
+
+.divider {
+  width: 2px;
+  height: 80%;
+  background: linear-gradient(
+    0deg,
+    rgb(0, 0, 0, 0) 0%,
+    rgb(173, 255, 47) 50%,
+    rgb(0, 0, 0, 0) 100%
+  );
+}
+
+.segment > img {
+  max-height: 300px;
+  border-radius: 5px;
+}
