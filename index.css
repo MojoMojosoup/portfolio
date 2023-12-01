@@ -18,8 +18,8 @@ section {
 .topPage {
   position: fixed;
   top: 0;
-  width: 100%;
   z-index: 0;
+  width: 100vw;
   height: 100vh;
 }
 
@@ -67,22 +67,6 @@ section {
   font-size: 16px;
 }
 
-.top-scroller {
-  width: 50px;
-  position: absolute;
-  left: 50%;
-  top: 80vh;
-  background-color: #F03A47;
-  display: flex;
-  aspect-ratio: 1 / 1;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-  color: #FFFFFF;
-  transform: translateX(-50%);
-  z-index: 10;
-}
-
 .lowerPage {
   position: absolute;
   background-color: #F9F9F9;
@@ -102,9 +86,13 @@ section {
   aspect-ratio: 500 / 140;
 }
 
-svg {
+.visuals-desktop, .visuals-mobile {
   width: 100%;
   position: absolute;
+}
+
+.visuals-mobile {
+  display: none;
 }
 
 .whitePath {
@@ -174,14 +162,13 @@ p {
   position: absolute;
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .work-header {
   font-size: 7em;
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .work-container {
@@ -405,3 +392,90 @@ p {
   animation-direction: alternate-reverse;
 }
 
+@media (max-width: 800px) {
+  .topPage {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+  }
+
+  .topPage > div {
+    position: relative;
+    top: unset;
+    right: unset;
+    left: unset;
+    bottom: unset;
+    max-width: unset;
+  }
+
+  .top-header {
+    flex-direction: column-reverse;
+  }
+
+  .top-header > p {
+    width: unset;
+    margin: 0;
+  }
+
+  .top-name {
+    font-size: 3.2em;
+  }
+
+  .bkg-container {
+    display: none;
+  }
+
+  .lowerPage {
+    position: relative;
+    top: 110%;
+  }
+
+  .lowerVisuals {
+    position: relative;
+    bottom: unset;
+    top: -40px;
+    left: -15px;
+    width: calc(100% + 30px);
+  }
+
+  .work-header-cont {
+    margin-top: 10px;
+  }
+
+  .work-header {
+    padding: 5px;
+    font-size: 4em;
+  }
+
+  .visuals-desktop {
+    display: none;
+  }
+
+  .visuals-mobile {
+    display: unset;
+  }
+
+  .work-container {
+    display: block;
+  }
+
+  .work-item-container, .work-item-content {
+    flex-flow: column nowrap;
+  }
+
+  .item-header-title {
+    font-size: 32px;
+    left: 10px;
+  }
+
+  .work-container:nth-of-type(even) .item-header-title {
+    left: 10px;
+    transform: unset;
+    text-align: unset;
+  }
+
+  .work-item-content {
+    padding: 5px 10px;
+  }
+}
