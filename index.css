@@ -23,6 +23,12 @@ section {
   height: 100vh;
 }
 
+.topPage, .lowerPage {
+  max-width: 1400px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .top-header {
   position: relative;
   top: 100px;
@@ -33,7 +39,7 @@ section {
 }
 
 .top-header > p {
-  width: 450px;
+  width: 600px;
   margin-left: 30px;
 }
 
@@ -43,6 +49,13 @@ section {
 
 .top-text {
   padding: 5px;
+}
+
+.top-desc-container {
+  position: relative;
+  top: 100px;
+  left: 40px;
+  max-width: 60%;
 }
 
 .top-corner-info {
@@ -410,6 +423,12 @@ p {
 }
 
 @media (max-width: 800px) {
+  .topPage, .lowerPage {
+    max-width: unset;
+    left: unset;
+    transform: unset;
+  }
+
   .topPage {
     position: relative;
     display: flex;
@@ -418,7 +437,7 @@ p {
     overflow: hidden;
   }
 
-  .top-footer, .top-header, .top-corner-info {
+  .top-footer, .top-header, .top-corner-info, .top-desc-container {
     position: relative;
     top: unset;
     right: unset;
